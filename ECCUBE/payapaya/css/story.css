@@ -1,0 +1,103 @@
+.story-wrap {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+}
+
+/*コンテンツ*/
+.story-container {
+    width: 40%;
+}
+
+.story-container div {
+    padding-top: 50vh;
+}
+
+.story-container div:last-child {
+    padding-bottom: 50vh;
+}
+
+.story-container div h2 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.story-container div p {
+    margin-top: 30px;
+    text-align: left;
+    line-height: 170%;
+}
+
+.story-lead {
+    text-align: center;
+    font-size: max(18px, 2.5vw);
+}
+
+.story-title {
+    color: #D79D27;
+}
+
+.story-title > span {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/*イメージ*/
+.images-container {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.images-container p {
+    height: 650px;
+    margin: auto;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: calc(50% - 80px);
+    bottom: 0;
+    transition: .8s !important;
+    opacity: 0;
+}
+
+.images-container p:first-child,
+.images-container p.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.story-section {
+    padding-top: 40px;
+}
+
+@media screen and (min-width:992px),
+print {
+    .story-sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .story-wrap {
+        display: none;
+    }
+
+    .story-section>h2 {
+        font-size: 20px;
+    }
+
+    .story-section>p {
+        text-align: justify;
+        padding: 1rem 0;
+    }
+}

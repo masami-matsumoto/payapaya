@@ -1,0 +1,39 @@
+{#
+    This file is part of EC-CUBE
+    
+    Copyright(c) EC-CUBE CO.,LTD. All Rights Reserved.
+    
+    http://www.ec-cube.co.jp/
+    
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
+    #}
+<!-- Footer -->
+ <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo"><a href=""><img src="{{ asset('assets/img/payapaya_logo.svg','user_data') }}" alt=""></a></div>
+      <ul class="footer-snsList">
+        <li class="footer-snsList__item"><a href=""><img src="{{ asset('assets/img/fb.png','user_data') }}" alt="Facebook"></a></li>
+        <li class="footer-snsList__item"><a href=""><img src="{{ asset('assets/img/x.png','user_data') }}" alt="X"></a></li>
+        <li class="footer-snsList__item"><a href=""><img src="{{ asset('assets/img/youtube.png','user_data') }}" alt="Youtube"></a></li>
+        <li class="footer-snsList__item"><a href=""><img src="{{ asset('assets/img/insta.png','user_data') }}" alt="Instagram"></a></li>
+      </ul>
+      <hr class="footer-border">
+      <div class="ftmenu">
+        <ul class="ftmenu__list _top">
+          <li class="ftmenu__item"><a href="{{ url('story',) }}">Story</a></li>
+          <li class="ftmenu__item"><a href="{{ url('product_list') }}">Products</a></li>
+          <li class="ftmenu__item"><a href="{{ url('about') }}">Brand</a></li>
+          <li class="ftmenu__item"><a href="{{ url('product_list') }}">News</a></li>
+          <li class="ftmenu__item"><a href="{{ url('fqa') }}">FAQ</a></li>
+          <li class="ftmenu__item"><a href="{{ url('product_list') }}">Contact</a></li>
+        </ul>
+        <ul class="ftmenu__list _bottom">
+          <li class="ftmenu__item"><a href="#">ショッピングガイド</a></li>
+          <li class="ftmenu__item"><a href="#">特定商取引法</a></li>
+          <li class="ftmenu__item"><a href="{{ url('help_privacy') }}">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright"><small lang="en">&copy; PAYAPAYA,Inc.</small></p>
+    </div>
+  </footer>

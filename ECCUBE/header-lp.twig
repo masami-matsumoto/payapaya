@@ -1,0 +1,50 @@
+ {#
+This file is part of EC-CUBE
+
+Copyright(c) EC-CUBE CO.,LTD. All Rights Reserved.
+
+http://www.ec-cube.co.jp/
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+#}
+{% block stylesheet %}
+{% endblock %}
+{% set totalQuantity = get_carts_total_quantity() %}
+<!-- Header -->
+ <header class="header">
+    <h1 class="header__logo"><a href="{{ url('homepage') }}"><img src="{{ asset('assets/img/payapaya_logo.svg','user_data') }}" alt="Paya Paya"></a></h1>
+    <button id="hamburger" class="hamburger" aria-label="メニューを開く"
+      onClick="document.querySelector('header').classList.toggle('open')">
+      <span class="hamburger__line" aria-hidden="true"></span>
+    </button>
+    <nav id="gnav" class="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li class="gnav__item"><a href="/" class="gnav__link">Story</a></li>
+        <li class="gnav__item"><a href="/service/" class="gnav__link">Products</a></li>
+        <li class="gnav__item"><a href="/products/" class="gnav__link">Brand</a></li>
+        <li class="gnav__item"><a href="/company/" class="gnav__link">News</a></li>
+      </ul>
+    </nav>
+    <ul class="header-menu">
+      <li class="header-menu__item search">
+      <button id="js-search"></button>
+      <div class="js-search">
+      <form id="search" method="get" action="{{ path('product_list') }}">
+        <input id="search-text" type="search" name="name" maxlength="50" class="search-name" placeholder="キーワードを入力">
+      </form>
+      </div>
+      </li>
+      {% if is_granted('ROLE_USER') %}
+        <li class="header-menu__item"><a href="{{ url('mypage') }}" class="header-menu__link"><img src="{{ asset('assets/img/icon_mypage.svg','user_data') }}" alt="マイページ"></a></li>
+        <li class="header-menu__item"><a href="{{ url('logout') }}" class="header-menu__link"><img src="{{ asset('assets/img/icon_logout.svg','user_data') }}" alt="ログアウト"></a></li>
+      {% else %}
+        <li class="header-menu__item"><a href="{{ url('mypage_login') }}" class="header-menu__link"><img src="{{ asset('assets/img/icon_mypage.svg','user_data') }}" alt="ログイン"></a></li>
+      {% endif %}
+      <li class="header-menu__item"><a href="{{ url('cart') }}" class="header-menu__link"><img src="{{ asset('assets/img/icon_cart.svg','user_data') }}" alt="カート">
+      <span class="ec-cartNavi__badge">{{ totalQuantity|number_format }}</span></a></li>
+    </ul>
+  </header>
+
+  {% block javascript %}
+{% endblock %}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paya Paya</title>
+  <meta name="description" content="Paya Payaの公式ウェブサイトです。">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/top.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo"><a href="/"><img src="img/payapaya_logo.svg" alt="Paya Paya"></a></h1>
+    <button id="hamburger" class="hamburger" aria-label="メニューを開く"
+      onClick="document.querySelector('header').classList.toggle('open')">
+      <span class="hamburger__line" aria-hidden="true"></span>
+    </button>
+    <nav id="gnav" class="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li class="gnav__item"><a href="story.html" class="gnav__link">Story</a></li>
+        <li class="gnav__item"><a href="/service/" class="gnav__link">Products</a></li>
+        <li class="gnav__item"><a href="/products/" class="gnav__link">Brand</a></li>
+        <li class="gnav__item"><a href="/company/" class="gnav__link">News</a></li>
+        <li class="gnav__item _search">
+          <div class="gnav-search">
+          <form action="" method="get" name="">
+            <input class="search-text" name="keyword" type="text" placeholder="キーワードで検索する">
+          </form></div></li>
+      </ul>
+    </nav>
+    <ul class="header-menu">
+      <li class="header-menu__item search">
+        <button id="js-search"></button>
+        <div class="js-search">
+        <form action="" method="get" name="">
+          <input id="search-text" name="keyword" type="text" placeholder="キーワードで検索する">
+        </form></div></li>
+      <li class="header-menu__item"><a href="/" class="header-menu__link"><img src="img/icon_mypage.png" alt="マイページ"></a></li>
+      <li class="header-menu__item"><a href="/" class="header-menu__link"><img src="img/icon_cart.png" alt="カート"></a></li>
+    </ul>
+  </header>
+
+  <main class="main-contents">
+    <div class="main-visual">
+      <div class="main-visual__text">
+        <p class="main-visual__title"><img src="img/main_logo.png" alt="Paya Paya"></p>
+        <p class="main-visual__catch">夢の世界で出会った<br>
+          妖精と再会するための香り</p>
+      </div>
+      <video src="img/main.mp4" autoplay loop muted playsinline></video>
+    </div>
+
+    <div class="container">
+      <section class="section">
+        <h2 class="heading-lv2-en section__title">
+          <span class="heading-lv2-en__main">News</span>
+        </h2>
+        <div class="grid grid--pc4col">
+          <article class="grid__item">
+            <a href="#" class="card">
+              <div class="card__body">
+                <p class="card__date">2024.00.00</p>
+                <p class="card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+              <div class="card__image"><img src="img/sample1.jpg" alt=""></div>
+            </a>
+          </article>
+          <article class="grid__item">
+            <a href="#" class="card">
+              <div class="card__body">
+                <p class="card__date">2024.00.00</p>
+                <p class="card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+              <div class="card__image"><img src="img/sample2.jpg" alt=""></div>
+            </a>
+          </article>
+          </article>
+          <article class="grid__item">
+            <a href="#" class="card">
+              <div class="card__body">
+                <p class="card__date">2024.00.00</p>
+                <p class="card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+              <div class="card__image"><img src="img/sample3.jpg" alt=""></div>
+            </a>
+          </article>
+          <article class="grid__item">
+            <a href="#" class="card">
+              <div class="card__body">
+                <p class="card__date">2024.00.00</p>
+                <p class="card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+              <div class="card__image"><img src="img/sample4.jpg" alt=""></div>
+            </a>
+          </article>
+        </div>
+        <p class="button-center section__button"><a href="./service/"
+            class="button button--outline button--md">ニュース一覧を見る</a></p>
+      </section>
+
+      <section class="section">
+        <h2 class="heading-lv2-ja section__title"><span class="heading-lv2-ja__main">夢の世界で出会った妖精と再会するための香り</span></h2>
+        <div class="heading-lv3">
+          <h3 class="heading-lv3__title">Reunited Perfumes</h3>
+        </div>
+        <div class="story">
+          <div class="story__image01">
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position: absolute; top: 0; left: 0;">
+              <clipPath id="clip01">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M280.846 4.80979C343.687 -1.38126 409.589 -2.73945 462.502 19.0909C515.15 40.8116 542.337 81.8084 565.185 122.12C587.919 162.231 604.954 204.832 592.647 248.707C579.916 294.09 546.885 337.502 496.188 368.086C446.237 398.219 381.6 409.513 318.076 414.344C255.708 419.087 192.22 416.467 139.482 395.211C86.7547 373.959 51.8506 337.476 28.3869 297.585C4.78028 257.451 -7.6926 213.295 6.62827 169.345C21.1361 124.821 57.6579 84.094 107.745 54.0412C156.894 24.551 218.597 10.9424 280.846 4.80979Z"
+                  fill="#F0E9E2" />
+              </clipPath>
+            </svg>
+            <svg width="597" height="417" viewBox="0 0 597 417" class="clip-image">
+              <image xlink:href="img/ph_dmy01.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                clip-path="url(#clip01)" />
+            </svg>
+          </div>
+          <p class="story__txt01">あの夜、<br>
+            あの夢で出会った妖精に<br>
+            もう一度出会いたい。<br>
+            そんな願いをお持ちのあなたに<br>
+            お届けするアイテムです。</p>
+          <div class="story__image02">
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position: absolute; top: 0; left: 0;">
+              <clipPath id="clip01">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M280.846 4.80979C343.687 -1.38126 409.589 -2.73945 462.502 19.0909C515.15 40.8116 542.337 81.8084 565.185 122.12C587.919 162.231 604.954 204.832 592.647 248.707C579.916 294.09 546.885 337.502 496.188 368.086C446.237 398.219 381.6 409.513 318.076 414.344C255.708 419.087 192.22 416.467 139.482 395.211C86.7547 373.959 51.8506 337.476 28.3869 297.585C4.78028 257.451 -7.6926 213.295 6.62827 169.345C21.1361 124.821 57.6579 84.094 107.745 54.0412C156.894 24.551 218.597 10.9424 280.846 4.80979Z"
+                  fill="#F0E9E2" />
+              </clipPath>
+            </svg>
+            <svg width="597" height="417" viewBox="0 0 597 417" class="clip-image">
+              <image xlink:href="img/ph_dmy01.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                clip-path="url(#clip01)" />
+            </svg>
+          </div>
+          <p class="story__txt02">すべてのアイテムに<br>
+            ローズウォーターを配合し、<br>
+            Paya Paya妖精の話を記した一冊の本に、<br>
+            香りの 秘密を詰め込みました。</p>
+          <p class="story__txt03">もしかしたら、<br>
+            香りの秘密が詰まったそれの存在を知った妖精が、<br>
+            祝福を授けてくれているかもしれません。</p>
+        </div>
+      </section>
+
+      <section class="section section-bg section-deco">
+        <h2 class="heading-lv2-en section__title">
+          <span class="heading-lv2-en__main">Products</span>
+        </h2>
+        <ul class="grid grid--pc3col pickup-list">
+          <li class="grid__item">
+            <a href="#" class="item">
+              <div class="item__image"><img src="img/d1.jpg" alt=""></div>
+              <p class="item__caption">Paya Paya<br>
+                ピローミスト 慈しみ（ピオニー）</p>
+              <p class="item__price">4,620円（税込）</p>
+              <ul class="item__data">
+                <li class="tag">限定品</li>
+                <li class="tag">クーポン対象</li>
+              </ul>
+            </a>
+          </li>
+          <li class="grid__item">
+            <a href="#" class="item">
+              <div class="item__image"><img src="img/d2.jpg" alt=""></div>
+              <p class="item__caption">Paya Paya<br>
+                優しさ（ジャスミン・スズラン）</p>
+              <p class="item__price">4,620円（税込）</p>
+              <ul class="item__data">
+                <li class="tag">限定品</li>
+                <li class="tag">クーポン対象</li>
+              </ul>
+            </a>
+          </li>
+          <li class="grid__item">
+            <a href="#" class="item">
+              <div class="item__image"><img src="img/d3.jpg" alt=""></div>
+              <p class="item__caption">Paya Paya<br>
+                安らぎ（ラベンダー）</p>
+              <p class="item__price">4,620円（税込）</p>
+              <ul class="item__data">
+                <li class="tag">限定品</li>
+                <li class="tag">クーポン対象</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+
+        <p class="button-center section__button"><a href="./products/"
+            class="button button--outline button--md">商品一覧を見る</a></p>
+      </section>
+      <section class="section">
+        <h2 class="heading-lv2-ja section__title"><span class="heading-lv2-ja__main">ブルガリアン・ローズウォーター配合</span></h2>
+        <div class="heading-lv3">
+          <h3 class="heading-lv3__title">Bulgarian Rose</h3>
+        </div>
+        <div class="alternate">
+          <div class="alternate__body">
+            <p class="alternate__txt">すべてのアイテムにブルガリアン・ローズウォーターを配合し、PayaPaya妖精の話を記した一冊の本に、香りの秘密を詰め込みました。</p>
+          </div>
+          <figure class="alternate__thumb">
+            <img src="img/top_rose1.jpg" alt="">
+          </figure>
+        </div>
+        <div class="alternate _reverse">
+          <div class="alternate__body">
+            <p class="alternate__txt">すべてのアイテムにブルガリアン・ローズウォーターを配合し、PayaPaya妖精の話を記した一冊の本に、香りの秘密を詰め込みました。</p>
+          </div>
+          <figure class="alternate__thumb">
+            <img src="img/top_rose2.jpg" alt="">
+          </figure>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="heading-lv2-en section__title">
+          <span class="heading-lv2-en__main">Information</span>
+        </h2>
+        <div class="info-container">
+          <ul class="info">
+            <li class="info__item">
+              <a href="" class="info__link">
+                <p class="info__date">2024.00.00. </p>
+                <p class="info__txt">システムメンテナンスのお知らせ </p>
+              </a>
+            </li>
+            <li class="info__item">
+              <a href="" class="info__link">
+                <p class="info__date">2024.00.00. </p>
+                <p class="info__txt">在庫入荷のお知らせ </p>
+              </a>
+            </li>
+            <li class="info__item">
+              <a href="" class="info__link">
+                <p class="info__date">2024.00.00. </p>
+                <p class="info__txt">クリスマスクーポンのお知らせ </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="button-center section__button"><a href="./products/"
+            class="button button--outline button--md">案内一覧を見る</a></p>
+      </section>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo"><a href=""><img src="img/payapaya_logo.svg" alt=""></a></div>
+      <ul class="footer-snsList">
+        <li class="footer-snsList__item"><a href=""><img src="img/fb.png" alt="Facebook"></a></li>
+        <li class="footer-snsList__item"><a href=""><img src="img/x.png" alt="X"></a></li>
+        <li class="footer-snsList__item"><a href=""><img src="img/youtube.png" alt="Youtube"></a></li>
+        <li class="footer-snsList__item"><a href=""><img src="img/insta.png" alt="Instagram"></a></li>
+      </ul>
+      <hr class="footer-border">
+      <div class="ftmenu">
+        <ul class="ftmenu__list _top">
+          <li class="ftmenu__item"><a href="#">Story</a></li>
+          <li class="ftmenu__item"><a href="#">Products</a></li>
+          <li class="ftmenu__item"><a href="#">Brand</a></li>
+          <li class="ftmenu__item"><a href="#">News</a></li>
+          <li class="ftmenu__item"><a href="#">FAQ</a></li>
+          <li class="ftmenu__item"><a href="#">Contact</a></li>
+        </ul>
+        <ul class="ftmenu__list _bottom">
+          <li class="ftmenu__item"><a href="#">ショッピングガイド</a></li>
+          <li class="ftmenu__item"><a href="#">特定商取引法</a></li>
+          <li class="ftmenu__item"><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright"><small lang="en">&copy; PAYAPAYA,Inc.</small></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
